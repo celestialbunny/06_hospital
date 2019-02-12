@@ -84,7 +84,7 @@ def menu_loop():
 
 		if choice in menu:
 			clear()
-			menu[choice]()
+			menu[choice](login_user)
 
 def view_patient_record(login_user):
 	patient_id = int(input("Enter the Patient ID to search: "))
